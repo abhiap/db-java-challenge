@@ -6,7 +6,7 @@ Account and Transfer API
 - Added /transactions/transfer api
 - Code tested with junits and via postman
     - TransactionServiceTest
-    - TransactionControllerTest (not fully functional)
+    - TransactionControllerTest
 - Added dockerfile (not tested)
 
 Improvements needed:
