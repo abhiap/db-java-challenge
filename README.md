@@ -6,13 +6,14 @@ Account and Transfer API
 
 Code tested with junits and via postman
 - TransactionServiceTest 
-- TransactionControllerTest (not fully functional)
+- TransactionControllerTest
 
 Added dockerfile (not tested) 
 
 Sample requests:
 
 1: Create Account
+
 curl --request POST \
   --url http://localhost:18080/v1/accounts \
   --header 'Content-Type: application/json' \
@@ -22,10 +23,12 @@ curl --request POST \
 }'
 
 2: Get Account
+
 curl --request GET \
   --url http://localhost:18080/v1/accounts/ID-101
   
 3: Transfer amount from one account to another 
+
 curl --request POST \
   --url 'http://localhost:18080/v1/transactions/transfer?fromAccountId=ID-101222&toAccountId=ID-101&amountToTransfer=5.09' \
   --header 'Content-Type: application/json'
